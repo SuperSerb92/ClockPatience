@@ -1,0 +1,13 @@
+C:\Users\urosr\source\repos\ClockPatience\ClockPatience\bin\Debug\netcoreapp3.1\ClockPatience.exe
+C:\Users\urosr\source\repos\ClockPatience\ClockPatience\bin\Debug\netcoreapp3.1\ClockPatience.deps.json
+C:\Users\urosr\source\repos\ClockPatience\ClockPatience\bin\Debug\netcoreapp3.1\ClockPatience.runtimeconfig.json
+C:\Users\urosr\source\repos\ClockPatience\ClockPatience\bin\Debug\netcoreapp3.1\ClockPatience.runtimeconfig.dev.json
+C:\Users\urosr\source\repos\ClockPatience\ClockPatience\bin\Debug\netcoreapp3.1\ClockPatience.dll
+C:\Users\urosr\source\repos\ClockPatience\ClockPatience\bin\Debug\netcoreapp3.1\ClockPatience.pdb
+C:\Users\urosr\source\repos\ClockPatience\ClockPatience\obj\Debug\netcoreapp3.1\ClockPatience.csproj.AssemblyReference.cache
+C:\Users\urosr\source\repos\ClockPatience\ClockPatience\obj\Debug\netcoreapp3.1\ClockPatience.AssemblyInfoInputs.cache
+C:\Users\urosr\source\repos\ClockPatience\ClockPatience\obj\Debug\netcoreapp3.1\ClockPatience.AssemblyInfo.cs
+C:\Users\urosr\source\repos\ClockPatience\ClockPatience\obj\Debug\netcoreapp3.1\ClockPatience.csproj.CoreCompileInputs.cache
+C:\Users\urosr\source\repos\ClockPatience\ClockPatience\obj\Debug\netcoreapp3.1\ClockPatience.dll
+C:\Users\urosr\source\repos\ClockPatience\ClockPatience\obj\Debug\netcoreapp3.1\ClockPatience.pdb
+C:\Users\urosr\source\repos\ClockPatience\ClockPatience\obj\Debug\netcoreapp3.1\ClockPatience.genruntimeconfig.cache

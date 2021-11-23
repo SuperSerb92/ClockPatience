@@ -8,15 +8,16 @@ namespace ClockPatience.Cards
     {
         List<Card> deck;
 
-        public Deck()
+        public Deck(string input)
         {
             deck = new List<Card>();
+            string[] cards = input.Split(' ');
+
 
             for (int s = 0; s < 4; s++)
             {
                 for (int v = 0; v < 13; v++)
                 {
-
 
                     Card card = new Card(s.ToString(), v.ToString());
                     deck.Add(card);

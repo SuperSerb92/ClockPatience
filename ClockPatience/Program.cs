@@ -1,5 +1,6 @@
 ﻿using ClockPatience.Cards;
 using System;
+using System.Collections.Generic;
 
 namespace ClockPatience
 {
@@ -7,24 +8,41 @@ namespace ClockPatience
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
 
             string input = Console.ReadLine();
-
-
+            int lineNo = 1;
             string line = "";
+            List<string> decks = new List<string>();
 
             while (line != "#")
             {
                 line = Console.ReadLine();
-                if (line != "#")
+                lineNo++;
+                if (lineNo==4)
                 {
+
+                    lineNo = 0;
                     input += " " + line;
-                }                
+                    decks.Add(input.TrimStart(' '));
+                    input = string.Empty;
+                }
+                else
+                {
+                    if (line != "#")
+                    {
+                        input += " " + line;
+                    }
+                }
+                          
             }
             //Start the game
-            Deck d = new Deck(input);
+            foreach (string item in decks)
+            {
+                Game g = new Game(item);
 
+                Console.WriteLine(g.PlayCards());
+            }
+           
             Console.ReadLine();
         }
     }

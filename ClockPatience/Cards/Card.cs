@@ -6,11 +6,10 @@ namespace ClockPatience.Cards
 {
     public class Card
     {
-        string value;
-        string suit;
-        public string Value { get => value; set => this.value = value; }
-        public string Suit { get => suit; set => suit = value; }
 
+        public string Value { get; }
+        public string Suit { get; }
+        public int ValueNo { get; set; }
         #region Constructor
         public Card()
         {
@@ -18,8 +17,56 @@ namespace ClockPatience.Cards
         }
         public Card(string Value,string Suit)
         {
-            this.value = Value;
-            this.suit = Suit;
+            this.Value = Value;
+            this.Suit = Suit;
+            StringToInt(Value);
+        }
+        void StringToInt(string value)
+        {
+            switch (value)
+            {
+                case "A":
+                    ValueNo = 0;
+                    break;
+                case "2":
+                    ValueNo = 1;
+                    break;
+                case "3":
+                    ValueNo = 2;
+                    break;
+                case "4":
+                    ValueNo = 3;
+                    break;
+                case "5":
+                    ValueNo = 4;
+                    break;
+                case "6":
+                    ValueNo = 5;
+                    break;
+                case "7":
+                    ValueNo = 6;
+                    break;
+                case "8":
+                    ValueNo = 7;
+                    break;
+                case "9":
+                    ValueNo = 8;
+                    break;
+                case "T":
+                    ValueNo = 9;
+                    break;
+                case "J":
+                    ValueNo = 10;
+                    break;
+                case "Q":
+                    ValueNo = 11;
+                    break;
+                case "K":
+                    ValueNo = 12;
+                    break;
+                default:
+                    break;
+            }
         }
         #endregion
     }

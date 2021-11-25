@@ -7,22 +7,37 @@ namespace ClockPatience.Cards
   public  class Deck
     {
         List<Card> deck;
-
+        public int CurrentStack;
+        List<Card>[] FaceUp { get;  set; }
+         List<Card>[] FaceDown { get; set; }
         public Deck(string input)
         {
             deck = new List<Card>();
             string[] cards = input.Split(' ');
 
 
-            for (int s = 0; s < 4; s++)
+            foreach (var item in cards)
             {
-                for (int v = 0; v < 13; v++)
-                {
-
-                    Card card = new Card(s.ToString(), v.ToString());
-                    deck.Add(card);
-                }
+               string value= item.Substring(0, 1);
+               string suit = item.Substring(1, 1);
+                Card card = new Card(value,suit);
+                deck.Add(card);
             }
+
+
         }
-    }
+
+        public Card DealCard()
+        {
+            if (deck.Count == 0) return null;
+
+            Card c = new Card();
+            int i = deck.Count - 1;
+            c = deck[i];
+            deck.RemoveAt(i);
+            return c;
+        }
+
+    
+}
 }
